@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
+
 class SqAreaTest {
 
     @Test
@@ -16,7 +17,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP4K3Square2() {
+    void whenP4K3Square0dot75() {
         double expected = 0.75;
         int p = 4;
         double k = 3;
@@ -25,7 +26,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP8K28quare2() {
+    void whenP8K28quare1dot58() {
         double expected = 1.58;
         int p = 8;
         double k = 8;
