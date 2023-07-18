@@ -1,7 +1,7 @@
 package ru.job4j.converter;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,7 +13,7 @@ class ConverterTest {
         float expected = 2;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
-        Assert.assertEquals(expected, out, eps);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
@@ -22,6 +22,6 @@ class ConverterTest {
         float expected = 2.1666f;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
-        Assert.assertEquals(expected, out, eps);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
