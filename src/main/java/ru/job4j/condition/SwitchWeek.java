@@ -17,7 +17,7 @@ public class SwitchWeek {
                 name = "Четверг";
                 break;
             case 5:
-                name = "Пятницае";
+                name = "Пятница";
                 break;
             case 6:
                 name = "Суббота";
@@ -30,6 +30,10 @@ public class SwitchWeek {
                 break;
         }
         return name;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(SwitchWeek.nameOfDay(7));
     }
 }
 
